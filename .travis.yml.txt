@@ -1,0 +1,12 @@
+sudo: required
+
+language: php
+
+services:
+  - docker
+
+before_install:
+  - docker build -t castlewww_init .
+
+script:
+  - date
