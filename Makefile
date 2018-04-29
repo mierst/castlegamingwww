@@ -4,7 +4,7 @@ run:
 	./docker-run.sh
 
 stop:
-	docker ps -q | xargs docker kill
+	docker ps -qa | xargs docker kill
 
-clean: stop
+clean: 
 	./docker-clean.sh
